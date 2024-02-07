@@ -204,3 +204,97 @@ function iprimirpizza() {
 	var repuestaingredientes=document.getElementById("repuestaingredientes")
 	repuestaingredientes.innerHTML=`SElecionastes una pizza Vegetariana con el ingrediente ${radio1.value} ${radio2.value}` 
 }
+
+
+function mediaAritmetica() {
+	var numero1 =document.getElementById("numeroMEdia1")
+	var numero2=document.getElementById("numeroMEdia2")
+	var operacion =(parseFloat(numero2.value)+parseFloat(numero1.value))/2
+	var respuestapar = (document.getElementById(
+		"respuestapar"
+	).innerHTML = `<samp class="mt-2 text-sm text-green-600 dark:text-green-500"><span class="font-medium"></span>La media de los dons numeros es de ${operacion}</samp>`);
+
+}
+
+function masaMuscular() {
+	var numero1 =document.getElementById("masa")
+	var numero2=document.getElementById("altura")
+	var operacion =(parseFloat(numero1.value)/parseFloat(Math.pow(numero2.value,2)))
+	var respuestapar = (document.getElementById(
+		"repuestamasa"
+	).innerHTML = `<samp class="mt-2 text-sm text-green-600 dark:text-green-500"><span class="font-medium"></span>su indice de masa corporal es de ${operacion}</samp>`);
+
+}
+
+function pulgadas() {
+	var pies = document.getElementById("pies")
+    var pulgadas = document.getElementById("pulgadas")
+	var cmPies = pies.value * 30.48;
+    var cmPulgadas = pulgadas.value * 2.54;
+    var totalCm = cmPies + cmPulgadas;
+
+	var respuestapar = (document.getElementById(
+	"repuestaPiesPulgadas"
+).innerHTML = `<samp class="mt-2 text-sm text-green-600 dark:text-green-500"><span class="font-medium"></span>El resultado es ${totalCm}</samp>`);
+console.log("holaa");
+
+}
+
+function pulgadascentimetros() {
+    var pulgadas = document.getElementById("pulgadas1")
+    var cmPulgadas = pulgadas.value * 2.54;
+    var totalCm = cmPulgadas;
+
+	var respuestapar = (document.getElementById(
+	"respuestaPulgadas"
+).innerHTML = `<samp class="mt-2 text-sm text-green-600 dark:text-green-500"><span class="font-medium"></span>los centimetros son${totalCm}</samp>`);
+console.log("holaa");
+}
+
+
+function piesCEntimetros() {
+	var pies = document.getElementById("pies1")
+	var cmPies = pies.value * 30.48;
+    var totalCm = cmPies ;
+
+	var respuestapar = (document.getElementById(
+	"respuestaPies"
+).innerHTML = `<samp class="mt-2 text-sm text-green-600 dark:text-green-500"><span class="font-medium"></span>los centimetros son ${totalCm}</samp>`);
+console.log("holaa");
+}
+
+
+function fahrenheitACelsius() {
+	const fahrenheit = document.getElementById("fahrenheit")
+    const celsius = (fahrenheit.value - 32) * 5/9;
+	var respuestapar = (document.getElementById(
+		"repuestafahrenheitACelsius"
+	).innerHTML = `<samp class="mt-2 text-sm text-green-600 dark:text-green-500"><span class="font-medium"></span>La tenperatura a celcius es de  ${celsius}</samp>`);
+	console.log("holaa");
+		
+}
+
+
+function segundosAMinutosSegundos() {
+	var segundos =document.getElementById("segundos")
+    const minutos = Math.floor(segundos.value / 60);
+    const segundosRestantes = segundos.value % 60;
+	var respuestapar = (document.getElementById(
+		"repeustasegundos"
+	).innerHTML = `<samp class="mt-2 text-sm text-green-600 dark:text-green-500"><span class="font-medium"></span>${segundos.value} segundos son ${minutos} minutos y ${segundosRestantes} segundos.</samp>`);
+	console.log("holaa");
+
+}
+
+function segundosAHorasMinutosSegundos() {
+	var segundos =document.getElementById("segundos2")
+    const horas = Math.floor(segundos.value / 3600);
+    const minutos = Math.floor((segundos.value % 3600) / 60);
+    const segundosRestantes = segundos.value % 60;
+	var respuestapar = (document.getElementById(
+		"repeustasegundos2"
+	).innerHTML = `<samp class="mt-2 text-sm text-green-600 dark:text-green-500"><span class="font-medium"></span>${segundos.value} segundos son ${horas} horas, ${minutos} minutos y ${segundosRestantes} segundos.</samp>`);
+	console.log("holaa");
+}
+
+
