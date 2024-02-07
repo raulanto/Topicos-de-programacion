@@ -143,7 +143,7 @@ function Calcularentrada() {
 		var respues = (document.getElementById(
 			"repuestacliente"
 		).innerHTML = `<samp class="mt-2 text-sm text-green-600 dark:text-green-500"><span class="font-medium"></span>Su entrada es de 5$</samp>`);
-	} else if (edadcliente.value > 18) {
+	} else if (edadcliente.value >= 18) {
 		var respues = (document.getElementById(
 			"repuestacliente"
 		).innerHTML = `<samp class="mt-2 text-sm text-green-600 dark:text-green-500"><span class="font-medium"></span>Su entrada es de 10$</samp>`);
