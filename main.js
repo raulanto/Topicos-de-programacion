@@ -169,7 +169,7 @@ function pizza(params) {
 			<tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 text-center">
 			  <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
 				<div class="">
-				  <input id="radio-1" type="radio" value="Pimienta" name="default-radio"
+				  <input onchange="pizza()" id="radio-1" type="radio" value="Pimienta" name="default-radio"
 					class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
 				  <label for="default-radio-1"
 					class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">Pimienta</label>
@@ -179,7 +179,7 @@ function pizza(params) {
 			<tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
 			  <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
 				<div class="">
-				  <input id="radio-2" type="radio" value="Tofu" name="default-radio"
+				  <input onchange="pizza()" id="radio-2" type="radio" value="Tofu" name="default-radio"
 					class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
 				  <label for="default-radio-1"
 					class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">Tofu</label>
@@ -191,6 +191,7 @@ function pizza(params) {
 		  var radio2=document.getElementById("radio-2")
 		  var repuestaingredientes=document.getElementById("repuestaingredientes")
 		  repuestaingredientes.innerHTML=`SElecionastes una pizza Vegetariana con el ingrediente ${radio1.value} ${radio2.value}` 
+
 			break;
 		case 2:
 			console.log("no vegetariana");
@@ -199,4 +200,7 @@ function pizza(params) {
 	}
 }
 
-
+function iprimirpizza() {
+	var repuestaingredientes=document.getElementById("repuestaingredientes")
+	repuestaingredientes.innerHTML=`SElecionastes una pizza Vegetariana con el ingrediente ${radio1.value} ${radio2.value}` 
+}
