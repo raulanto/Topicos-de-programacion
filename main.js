@@ -298,3 +298,41 @@ function segundosAHorasMinutosSegundos() {
 }
 
 
+function imprimirPalabra() {
+    const palabra = document.getElementById("palabra").value;
+    let respuestas = '';
+    for (let index = 0; index < 10; index++) {
+        respuestas += `<samp class="mt-2 text-sm text-green-600 dark:text-green-500"><span class="font-medium"></span>${palabra}</samp><br>`;
+    }
+    document.getElementById("respuestaPalabra").innerHTML = respuestas;
+}
+
+function imprimirEdad() {
+	const edadiprimi = document.getElementById("edadiprimi").value;
+	var respuestas = '';
+
+	for (let i = 1; i <= edadiprimi; i++) {
+		respuestas += `<samp class="mt-2 text-sm text-green-600 dark:text-green-500"><span class="font-medium"></span>Año  ${2024-i} : Has cumplido  ${i} años.</samp><br>`;
+        console.log("Año  ${i} : Has cumplido  ${i} años.");
+    }
+	document.getElementById("respuestaEdad").innerHTML = respuestas;
+}
+
+
+function numerosimpares() {
+	const numero =document.getElementById("numero3").value
+	var respuestas = '';
+    // Iterar desde 1 hasta el número ingresado, incluyendo solo los números impares
+    for (let i = 1; i <= numero; i++) {
+        if (i % 2 !== 0) {
+			respuestas += `<samp class="mt-2 text-sm text-red-600 dark:text-red-500"><span class="font-medium"></span>${i} no es par</samp><br>`;
+
+        }else{
+			respuestas += `<samp class="mt-2 text-sm text-green-600 dark:text-green-500"><span class="font-medium"></span>Si es par ${i}</samp><br>`;
+		}
+    }
+	document.getElementById("imprimirparnu").innerHTML = respuestas;
+
+}
+
+

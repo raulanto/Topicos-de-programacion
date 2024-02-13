@@ -79,627 +79,714 @@
   </header>
   <main class="">
     <!-- Indice -->
+    <article>
+      <div class="mx-12 place-self-center lg:col-span-7">
+        <h1
+          class="max-w-2xl mb-4 text-4xl font-extrabold tracking-tight leading-none md:text-5xl xl:text-6xl dark:text-white">
+          Ejercicios 1
+        </h1>
 
-    <div class="mx-12 place-self-center lg:col-span-7">
-      <h1
-        class="max-w-2xl mb-4 text-4xl font-extrabold tracking-tight leading-none md:text-5xl xl:text-6xl dark:text-white">
-        Ejercicios 1
-      </h1>
+      </div>
 
-    </div>
+      <!-- Ejercicios 1 -->
+      <section class="max-w-screen-xl px-4 py-8 mx-auto">
+        <div class="border rounded-lg border-gray-300 dark:border-gray-600 h-96 mb-4 w-full auto-rows-max px-4 py-2">
+          <h2 class="text-xl font-bold">Ejercicios 1</h2>
+          <p class="my-2">
+            Escribir un programa que almacene la cadena de caracteres contraseña
+            en una variable, pregunte al usuario por la contraseña e imprima por
+            pantalla si la contraseña introducida por el usuario coincide con la
+            guardada en la variable sin tener en cuenta mayúsculas y minúsculas
+          </p>
+          <div class="mx-12">
+            <label for="passwordUser" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Ingresa la
+              contraseña</label>
+            <input type="text" id="passwordUser"
+              class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+              placeholder="Contraseña" required />
+            <p id="respuesta"></p>
+            <button onclick="veriricarContra()" type="button"
+              class="my-3 text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">
+              Verificar
+            </button>
+          </div>
+        </div>
+      </section>
+      <!-- Ejercicios 2 -->
+      <section class="max-w-screen-xl px-4 py-8 mx-auto">
+        <div class="border rounded-lg border-gray-300 dark:border-gray-600 h-96 mb-4 w-full auto-rows-max px-4 py-2">
+          <h2 class="text-xl font-bold">Ejercicios 2</h2>
+          <p class="my-2">
+            Escribir un programa que pida al usuario dos números y muestre por pantalla su división.
+            Si el divisor es cero el programa debe mostrar un error.
 
-    <!-- Ejercicios 1 -->
-    <section class="max-w-screen-xl px-4 py-8 mx-auto">
-      <div class="border rounded-lg border-gray-300 dark:border-gray-600 h-96 mb-4 w-full auto-rows-max px-4 py-2">
-        <h2 class="text-xl font-bold">Ejercicios 1</h2>
-        <p class="my-2">
-          Escribir un programa que almacene la cadena de caracteres contraseña
-          en una variable, pregunte al usuario por la contraseña e imprima por
-          pantalla si la contraseña introducida por el usuario coincide con la
-          guardada en la variable sin tener en cuenta mayúsculas y minúsculas
-        </p>
-        <div class="mx-12">
-          <label for="passwordUser" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Ingresa la
-            contraseña</label>
-          <input type="text" id="passwordUser"
-            class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-            placeholder="Contraseña" required />
-          <p id="respuesta"></p>
-          <button onclick="veriricarContra()" type="button"
+          </p>
+          <div class="grid gap-4 mb-4 sm:grid-cols-2">
+            <div>
+              <label for="name" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Ingrese un
+                numero</label>
+              <input type="number" name="name" id="numero1" min="0"
+                class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
+                placeholder="Numero">
+            </div>
+
+            <div>
+              <label for="brand" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Ingrese un segundo
+                numero</label>
+              <input type="number" name="brand" id="numero2" min="0"
+                class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
+                placeholder="Numero">
+            </div>
+          </div>
+          <div class="">
+            <p id="resultadoDiv">Repuesta: </p>
+
+          </div>
+          <button onclick="dividir()" type="button"
+            class="my-3 text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">
+            Dividir
+          </button>
+          <div id=""></div>
+      </section>
+
+      <!-- Ejercicios 3 -->
+      <section class="max-w-screen-xl px-4 py-8 mx-auto">
+        <div class="border rounded-lg border-gray-300 dark:border-gray-600 h-96 mb-4 w-full auto-rows-max px-4 py-2">
+          <h2 class="text-xl font-bold">Ejercicios 3</h2>
+          <p class="my-2">
+            Escribir un programa que pida al usuario un número entero y muestre por pantalla si es par
+            o impar.
+
+          </p>
+          <div class="grid gap-4 mb-4 sm:grid-cols-2">
+            <div>
+              <label for="name" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Ingrese un
+                numero</label>
+              <input type="number" name="name" id="numeroPar" min="0"
+                class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
+                placeholder="Numero">
+            </div>
+
+          </div>
+          <div class="">
+            <p id="numeroParr">Repuesta: </p>
+
+          </div>
+          <button onclick="ParoImpar()" type="button"
             class="my-3 text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">
             Verificar
           </button>
-        </div>
+          <div id=""></div>
+      </section>
+
+      <!-- Ejercicios 4 -->
+      <section class="max-w-screen-xl px-4 py-8 mx-auto">
+        <div class="border rounded-lg border-gray-300 dark:border-gray-600 h-96 mb-4 w-full auto-rows-max px-4 py-2">
+          <h2 class="text-xl font-bold">Ejercicios 4</h2>
+          <p class="my-2">
+            Para tributar un determinado impuesto se debe ser mayor de 16 años y tener unos ingresos
+            iguales o superiores a 1000 € mensuales. Escribir un programa que pregunte al usuario su
+            edad y sus ingresos mensuales y muestre por pantalla si el usuario tiene que tributar o no
+
+          </p>
+          <div class="grid gap-4 mb-4 sm:grid-cols-2">
+            <div>
+              <label for="name" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Ingrese su
+                edad</label>
+              <input type="number" name="name" id="edad" min="0"
+                class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
+                placeholder="Numero">
+            </div>
+            <div>
+              <label for="name" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Ingrese sus
+                ingresos</label>
+              <input type="number" name="name" id="entrada" min="0"
+                class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
+                placeholder="Numero">
+            </div>
+            <p id="edadImpuestosr">Repuesta: </p>
+
+          </div>
+
+          <button onclick="edadImpuestos()" type="button"
+            class="my-3 text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">
+            Verificar
+          </button>
+          <div id=""></div>
+      </section>
+
+      <!-- Ejercicios 5 -->
+      <section class="max-w-screen-xl px-4 py-8 mx-auto">
+        <div class="border rounded-lg border-gray-300 dark:border-gray-600  mb-4 w-full auto-rows-max px-4 py-2">
+          <h2 class="text-xl font-bold">Ejercicios 5</h2>
+          <p class="my-2">
+            Los tramos impositivos para la declaración de la renta en un determinado país son los
+            siguientes:
+
+          <div class="relative overflow-x-auto flex justify-center">
+            <table class="w-96 text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">
+              <thead class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400 text">
+                <tr>
+                  <th scope="col" class="px-6 py-3 text-center">
+                    Renta
+                  </th>
+                  <th scope="col" class="px-6 py-3 text-center">
+                    Tipo impositivo
+                  </th>
+                </tr>
+              </thead>
+              <tbody class="text-center">
+                <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 text-center">
+                  <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                    Menos de 1000
+                  </th>
+                  <td class="px-6 py-4">
+                    5%
+                  </td>
+                </tr>
+                <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
+                  <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                    10000 y 20000
+                  </th>
+                  <td class="px-6 py-4">
+                    15%
+                  </td>
+                </tr>
+                <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
+                  <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                    35000 y 60000
+                  </th>
+                  <td class="px-6 py-4">
+                    30%
+                  </td>
+                </tr>
+                <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
+                  <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                    Mas de 60000
+                  </th>
+                  <td class="px-6 py-4">
+                    45%
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          Escribir un programa que pregunte al usuario su renta anual y muestre por pantalla el tipo
+          impositivo que le corresponde
+
+          </p>
+          <div class="grid gap-4 mb-4 sm:grid-cols-2">
+            <div>
+              <label for="name" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">renta anual</label>
+              <input type="number" name="name" id="renta" min="0"
+                class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
+                placeholder="Numero">
+            </div>
+
+
+          </div>
+          <p id="impuestosREnta">Repuesta: </p>
+
+          <button onclick="Rentaanual()" type="button"
+            class="my-3 text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">
+            Verificar
+          </button>
+          <div id=""></div>
+      </section>
+
+      <!-- Ejercicios 6 -->
+      <section class="max-w-screen-xl px-4 py-8 mx-auto">
+        <div class="border rounded-lg border-gray-300 dark:border-gray-600  mb-4 w-full auto-rows-max px-4 py-2">
+          <h2 class="text-xl font-bold">Ejercicios 5</h2>
+          <p class="my-2">
+            En una determinada empresa, sus empleados son evaluados al final de cada año. Los
+            puntos que pueden obtener en la evaluación comienzan en 0.0 y pueden ir aumentando,
+            traduciéndose en mejores beneficios. Los puntos que pueden conseguir los empleados
+            pueden ser 0.0, 0.4, 0.6 o más, pero no valores intermedios entre las cifras mencionadas.
+            A continuación se muestra una tabla con los niveles correspondientes a cada puntuación.
+            La cantidad de dinero conseguida en cada nivel es de 2.400€ multiplicada por la puntuación
+            del nivel.
+
+          <div class="relative overflow-x-auto flex justify-center">
+            <table class="w-96 text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">
+              <thead class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400 text">
+                <tr>
+                  <th scope="col" class="px-6 py-3 text-center">
+                    Nivel
+                  </th>
+                  <th scope="col" class="px-6 py-3 text-center">
+                    Puntuacion
+                  </th>
+                </tr>
+              </thead>
+              <tbody class="text-center">
+                <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 text-center">
+                  <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                    Inaceptable
+                  </th>
+                  <td class="px-6 py-4">
+                    0.0
+                  </td>
+                </tr>
+                <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
+                  <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                    Aceptable
+                  </th>
+                  <td class="px-6 py-4">
+                    0.4
+                  </td>
+                </tr>
+                <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
+                  <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                    Meritorio
+                  </th>
+                  <td class="px-6 py-4">
+                    0.6
+                  </td>
+                </tr>
+
+              </tbody>
+            </table>
+          </div>
+          Escribir un programa que lea la puntuación del usuario e indique su nivel de rendimiento,
+          así como la cantidad de dinero que recibirá el usuario
+
+
+          </p>
+          <div class="grid gap-4 mb-4 sm:grid-cols-2">
+            <div>
+              <label for="name" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">renta anual</label>
+              <input type="number" name="name" id="puntuacion" min="0"
+                class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
+                placeholder="Numero">
+            </div>
+
+
+          </div>
+          <p id="repuestaPuntuacion">Repuesta: </p>
+
+          <button onclick="empresaPuntuacion()" type="button"
+            class="my-3 text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">
+            Verificar
+          </button>
+          <div id=""></div>
+      </section>
+
+      <!-- Ejercicios 7 -->
+      <section class="max-w-screen-xl px-4 py-8 mx-auto">
+        <div class="border rounded-lg border-gray-300 dark:border-gray-600  mb-4 w-full auto-rows-max px-4 py-2">
+          <h2 class="text-xl font-bold">Ejercicios 7</h2>
+          <p class="my-2">
+            Escribir un programa para una empresa que tiene salas de juegos para todas las edades y
+            quiere calcular de forma automática el precio que debe cobrar a sus clientes por entrar. El
+            programa debe preguntar al usuario la edad del cliente y mostrar el precio de la entrada. Si
+            el cliente es menor de 4 años puede entrar gratis, si tiene entre 4 y 18 años debe pagar 5€
+            y si es mayor de 18 años, 10€.
+
+
+          </p>
+          <div class="grid gap-4 mb-4 sm:grid-cols-2">
+            <div>
+              <label for="name" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Puntuacion</label>
+              <input type="number" name="name" id="edadCliente" min="0"
+                class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
+                placeholder="Numero">
+            </div>
+
+
+          </div>
+          <p id="repuestacliente">Repuesta: </p>
+
+          <button onclick="Calcularentrada()" type="button"
+            class="my-3 text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">
+            Calcularentrada
+          </button>
+          <div id=""></div>
+      </section>
+
+      <!-- Ejercicios 8 -->
+      <section class="max-w-screen-xl px-4 py-8 mx-auto">
+        <div class="border rounded-lg border-gray-300 dark:border-gray-600  mb-4 w-full auto-rows-max px-4 py-2">
+          <h2 class="text-xl font-bold">Ejercicios </h2>
+          <p class="my-2">
+            La pizzería Bella Napoli ofrece pizzas vegetarianas y no vegetarianas a sus clientes. Los
+            ingredientes para cada tipo de pizza aparecen a continuación.
+          <p> Ingredientes vegetarianos: Pimiento y tofu.
+          </p>
+          <p>Ingredientes no vegetarianos: Peperoni, Jamón y Salmón.</p>
+          <p> Escribir un programa que pregunte al usuario si quiere una pizza vegetariana o no, y en
+            función de su respuesta le muestre un menú con los ingredientes disponibles para que elija.
+            Solo se puede eligir un ingrediente además de la mozzarella y el tomate que están en todas
+            la pizzas. Al final se debe mostrar por pantalla si la pizza elegida es vegetariana o no y
+            todos los ingredientes que lleva.</p>
+
+
+          </p>
+          <label for="countries" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Select an
+            option</label>
+          <select onchange="pizza()" id="spizza"
+            class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+            <option selected>Elije la pizza</option>
+            <option value="1">Vejetariana</option>
+            <option value="2">Normal</option>
+
+          </select>
+          <p class="my-3" id="repuestacliente">
+          <div class="relative overflow-x-auto flex justify-center">
+            <table class="w-96 text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400" id="tabla">
+
+            </table>
+          </div>
+          </p>
+          <p id="repuestaingredientes">Repuesta: </p>
+
+          <button onclick="Calcularentrada()" type="button"
+            class="my-3 text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">
+            Impirmir
+          </button>
+          <div id=""></div>
+
+      </section>
+    </article>
+    <article>
+      <div class="mx-12 place-self-center lg:col-span-7">
+        <h1
+          class="max-w-2xl mb-4 text-4xl font-extrabold tracking-tight leading-none md:text-5xl xl:text-6xl dark:text-white">
+          Ejercicios 2
+        </h1>
+
       </div>
-    </section>
-    <!-- Ejercicios 2 -->
-    <section class="max-w-screen-xl px-4 py-8 mx-auto">
-      <div class="border rounded-lg border-gray-300 dark:border-gray-600 h-96 mb-4 w-full auto-rows-max px-4 py-2">
-        <h2 class="text-xl font-bold">Ejercicios 2</h2>
-        <p class="my-2">
-          Escribir un programa que pida al usuario dos números y muestre por pantalla su división.
-          Si el divisor es cero el programa debe mostrar un error.
 
-        </p>
-        <div class="grid gap-4 mb-4 sm:grid-cols-2">
-          <div>
-            <label for="name" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Ingrese un
-              numero</label>
-            <input type="number" name="name" id="numero1" min="0"
-              class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
-              placeholder="Numero">
+      <!-- Ejercicios 1 -->
+      <section class="max-w-screen-xl px-4 py-8 mx-auto">
+        <div class="border rounded-lg border-gray-300 dark:border-gray-600  mb-4 w-full auto-rows-max px-4 py-2">
+          <h2 class="text-xl font-bold">Ejercicios 1</h2>
+          <p class="my-2">
+            Escriba un programa que pida dos números y que escriba su media
+            aritmética.
+
+          </p>
+          <div class="grid gap-4 mb-4 sm:grid-cols-2">
+            <div>
+              <label for="name" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Primer
+                numero</label>
+              <input type="number" name="name" id="numeroMEdia1" min="0"
+                class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
+                placeholder="Numero">
+            </div>
+            <div>
+              <label for="name" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Segundo
+                numero</label>
+              <input type="number" name="name" id="numeroMEdia2" min="0"
+                class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
+                placeholder="Numero">
+            </div>
+
+
           </div>
+          <p id="respuestapar">Repuesta: </p>
 
-          <div>
-            <label for="brand" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Ingrese un segundo
-              numero</label>
-            <input type="number" name="brand" id="numero2" min="0"
-              class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
-              placeholder="Numero">
+          <button onclick="mediaAritmetica()" type="button"
+            class="my-3 text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">
+            Verificar
+          </button>
+          <div id=""></div>
+      </section>
+      <!-- Ejercicios 2 -->
+      <section class="max-w-screen-xl px-4 py-8 mx-auto">
+        <div class="border rounded-lg border-gray-300 dark:border-gray-600  mb-4 w-full auto-rows-max px-4 py-2">
+          <h2 class="text-xl font-bold">Ejercicios 2</h2>
+          <p class="my-2">
+            Escriba un programa que pida el peso (en kilogramos) y la altura (en
+            metros) de una persona y que calcule su índice de masa corporal (imc).
+
+          </p>
+          <div class="grid gap-4 mb-4 sm:grid-cols-2">
+            <div>
+              <label for="name" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Ingrese su masa en
+                kg</label>
+              <input type="number" name="name" id="masa" min="0"
+                class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
+                placeholder="Numero">
+            </div>
+            <div>
+              <label for="name" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Su altura en
+                metros</label>
+              <input type="number" name="name" id="altura" min="0"
+                class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
+                placeholder="Numero">
+            </div>
+
+
           </div>
-        </div>
-        <div class="">
-          <p id="resultadoDiv">Repuesta: </p>
+          <p id="repuestamasa">Repuesta: </p>
 
-        </div>
-        <button onclick="dividir()" type="button"
-          class="my-3 text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">
-          Dividir
-        </button>
-        <div id=""></div>
-    </section>
+          <button onclick="masaMuscular()" type="button"
+            class="my-3 text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">
+            Verificar
+          </button>
+          <div id=""></div>
+      </section>
 
-    <!-- Ejercicios 3 -->
-    <section class="max-w-screen-xl px-4 py-8 mx-auto">
-      <div class="border rounded-lg border-gray-300 dark:border-gray-600 h-96 mb-4 w-full auto-rows-max px-4 py-2">
-        <h2 class="text-xl font-bold">Ejercicios 3</h2>
-        <p class="my-2">
-          Escribir un programa que pida al usuario un número entero y muestre por pantalla si es par
-          o impar.
+      <!-- Ejercicios 3 -->
+      <section class="max-w-screen-xl px-4 py-8 mx-auto">
+        <div class="border rounded-lg border-gray-300 dark:border-gray-600  mb-4 w-full auto-rows-max px-4 py-2">
+          <h2 class="text-xl font-bold">Ejercicios 3</h2>
+          <p class="my-2">
+            Escriba un programa que pida una distancia en pies y pulgadas y que
+            escriba esa distancia en centímetros.
 
-        </p>
-        <div class="grid gap-4 mb-4 sm:grid-cols-2">
-          <div>
-            <label for="name" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Ingrese un
-              numero</label>
-            <input type="number" name="name" id="numeroPar" min="0"
-              class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
-              placeholder="Numero">
+          </p>
+          <div class="grid gap-4 mb-4 sm:grid-cols-2">
+            <div>
+              <label for="name" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Pies</label>
+              <input type="number" name="name" id="pies" min="0"
+                class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
+                placeholder="Numero">
+            </div>
+            <div>
+              <label for="name" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Pulgadas</label>
+              <input type="number" name="name" id="pulgadas" min="0"
+                class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
+                placeholder="Numero">
+            </div>
+
+
           </div>
+          <p id="repuestaPiesPulgadas">Repuesta: </p>
 
-        </div>
-        <div class="">
-          <p id="numeroParr">Repuesta: </p>
+          <button onclick="pulgadas()" type="button"
+            class="my-3 text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">
+            Calcular
+          </button>
+          <div id=""></div>
+      </section>
+      <!-- Ejercicios 4 -->
+      <section class="max-w-screen-xl px-4 py-8 mx-auto">
+        <div class="border rounded-lg border-gray-300 dark:border-gray-600  mb-4 w-full auto-rows-max px-4 py-2">
+          <h2 class="text-xl font-bold">Ejercicios 4</h2>
+          <p class="my-2">
+            Escriba un programa que pida una distancia en pulgadas y que escriba
+            esa distancia en centímetros
 
-        </div>
-        <button onclick="ParoImpar()" type="button"
-          class="my-3 text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">
-          Verificar
-        </button>
-        <div id=""></div>
-    </section>
+          </p>
+          <div class="grid gap-4 mb-4 sm:grid-cols-2">
+            <div>
+              <label for="name" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Pulgadas</label>
+              <input type="number" name="name" id="pulgadas1" min="0"
+                class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
+                placeholder="Numero">
+            </div>
 
-    <!-- Ejercicios 4 -->
-    <section class="max-w-screen-xl px-4 py-8 mx-auto">
-      <div class="border rounded-lg border-gray-300 dark:border-gray-600 h-96 mb-4 w-full auto-rows-max px-4 py-2">
-        <h2 class="text-xl font-bold">Ejercicios 4</h2>
-        <p class="my-2">
-          Para tributar un determinado impuesto se debe ser mayor de 16 años y tener unos ingresos
-          iguales o superiores a 1000 € mensuales. Escribir un programa que pregunte al usuario su
-          edad y sus ingresos mensuales y muestre por pantalla si el usuario tiene que tributar o no
 
-        </p>
-        <div class="grid gap-4 mb-4 sm:grid-cols-2">
-          <div>
-            <label for="name" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Ingrese su
-              edad</label>
-            <input type="number" name="name" id="edad" min="0"
-              class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
-              placeholder="Numero">
           </div>
-          <div>
-            <label for="name" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Ingrese sus
-              ingresos</label>
-            <input type="number" name="name" id="entrada" min="0"
-              class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
-              placeholder="Numero">
+          <p id="respuestaPulgadas">Repuesta: </p>
+
+          <button onclick="pulgadascentimetros()" type="button"
+            class="my-3 text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">
+            Calcular
+          </button>
+          <div id=""></div>
+      </section>
+
+      <!-- Ejercicios 5 -->
+      <section class="max-w-screen-xl px-4 py-8 mx-auto">
+        <div class="border rounded-lg border-gray-300 dark:border-gray-600  mb-4 w-full auto-rows-max px-4 py-2">
+          <h2 class="text-xl font-bold">Ejercicios 5</h2>
+          <p class="my-2">
+            Escriba un programa que pida una distancia en pulgadas y que escriba
+            esa distancia en centímetros
+
+          </p>
+          <div class="grid gap-4 mb-4 sm:grid-cols-2">
+            <div>
+              <label for="name" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Pies</label>
+              <input type="number" name="name" id="pies1" min="0"
+                class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
+                placeholder="Numero">
+            </div>
+
+
           </div>
-          <p id="edadImpuestosr">Repuesta: </p>
+          <p id="respuestaPies">Repuesta: </p>
 
-        </div>
+          <button onclick="piesCEntimetros()" type="button"
+            class="my-3 text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">
+            Calcular
+          </button>
+          <div id=""></div>
+      </section>
+      <!-- Ejercicios 6 -->
+      <section class="max-w-screen-xl px-4 py-8 mx-auto">
+        <div class="border rounded-lg border-gray-300 dark:border-gray-600  mb-4 w-full auto-rows-max px-4 py-2">
+          <h2 class="text-xl font-bold">Ejercicios 6</h2>
+          <p class="my-2">
+            Escriba un programa que pida una temperatura en grados Fahrenheit y
+            que escriba esa temperatura en grados Celsius.
 
-        <button onclick="edadImpuestos()" type="button"
-          class="my-3 text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">
-          Verificar
-        </button>
-        <div id=""></div>
-    </section>
+          </p>
+          <div class="grid gap-4 mb-4 sm:grid-cols-2">
+            <div>
+              <label for="name" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">fahrenheit</label>
+              <input type="number" name="name" id="fahrenheit" min="0"
+                class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
+                placeholder="Numero">
+            </div>
 
-    <!-- Ejercicios 5 -->
-    <section class="max-w-screen-xl px-4 py-8 mx-auto">
-      <div class="border rounded-lg border-gray-300 dark:border-gray-600  mb-4 w-full auto-rows-max px-4 py-2">
-        <h2 class="text-xl font-bold">Ejercicios 5</h2>
-        <p class="my-2">
-          Los tramos impositivos para la declaración de la renta en un determinado país son los
-          siguientes:
 
-        <div class="relative overflow-x-auto flex justify-center">
-          <table class="w-96 text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">
-            <thead class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400 text">
-              <tr>
-                <th scope="col" class="px-6 py-3 text-center">
-                  Renta
-                </th>
-                <th scope="col" class="px-6 py-3 text-center">
-                  Tipo impositivo
-                </th>
-              </tr>
-            </thead>
-            <tbody class="text-center">
-              <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 text-center">
-                <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
-                  Menos de 1000
-                </th>
-                <td class="px-6 py-4">
-                  5%
-                </td>
-              </tr>
-              <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
-                <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
-                  10000 y 20000
-                </th>
-                <td class="px-6 py-4">
-                  15%
-                </td>
-              </tr>
-              <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
-                <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
-                  35000 y 60000
-                </th>
-                <td class="px-6 py-4">
-                  30%
-                </td>
-              </tr>
-              <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
-                <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
-                  Mas de 60000
-                </th>
-                <td class="px-6 py-4">
-                  45%
-                </td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-
-        Escribir un programa que pregunte al usuario su renta anual y muestre por pantalla el tipo
-        impositivo que le corresponde
-
-        </p>
-        <div class="grid gap-4 mb-4 sm:grid-cols-2">
-          <div>
-            <label for="name" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">renta anual</label>
-            <input type="number" name="name" id="renta" min="0"
-              class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
-              placeholder="Numero">
           </div>
+          <p id="repuestafahrenheitACelsius">Repuesta: </p>
+
+          <button onclick="fahrenheitACelsius()" type="button"
+            class="my-3 text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">
+            Calcular
+          </button>
+          <div id=""></div>
+      </section>
+      <!-- Ejercicios 7 -->
+      <section class="max-w-screen-xl px-4 py-8 mx-auto">
+        <div class="border rounded-lg border-gray-300 dark:border-gray-600  mb-4 w-full auto-rows-max px-4 py-2">
+          <h2 class="text-xl font-bold">Ejercicios 7</h2>
+          <p class="my-2">
+            Escriba un programa que pida una cantidad de segundos y que escriba
+            cuántos minutos y segundos son.
+
+          </p>
+          <div class="grid gap-4 mb-4 sm:grid-cols-2">
+            <div>
+              <label for="name" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Segundos</label>
+              <input type="number" name="name" id="segundos" min="0"
+                class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
+                placeholder="Numero">
+            </div>
 
 
-        </div>
-        <p id="impuestosREnta">Repuesta: </p>
-
-        <button onclick="Rentaanual()" type="button"
-          class="my-3 text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">
-          Verificar
-        </button>
-        <div id=""></div>
-    </section>
-
-    <!-- Ejercicios 6 -->
-    <section class="max-w-screen-xl px-4 py-8 mx-auto">
-      <div class="border rounded-lg border-gray-300 dark:border-gray-600  mb-4 w-full auto-rows-max px-4 py-2">
-        <h2 class="text-xl font-bold">Ejercicios 5</h2>
-        <p class="my-2">
-          En una determinada empresa, sus empleados son evaluados al final de cada año. Los
-          puntos que pueden obtener en la evaluación comienzan en 0.0 y pueden ir aumentando,
-          traduciéndose en mejores beneficios. Los puntos que pueden conseguir los empleados
-          pueden ser 0.0, 0.4, 0.6 o más, pero no valores intermedios entre las cifras mencionadas.
-          A continuación se muestra una tabla con los niveles correspondientes a cada puntuación.
-          La cantidad de dinero conseguida en cada nivel es de 2.400€ multiplicada por la puntuación
-          del nivel.
-
-        <div class="relative overflow-x-auto flex justify-center">
-          <table class="w-96 text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">
-            <thead class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400 text">
-              <tr>
-                <th scope="col" class="px-6 py-3 text-center">
-                  Nivel
-                </th>
-                <th scope="col" class="px-6 py-3 text-center">
-                  Puntuacion
-                </th>
-              </tr>
-            </thead>
-            <tbody class="text-center">
-              <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 text-center">
-                <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
-                  Inaceptable
-                </th>
-                <td class="px-6 py-4">
-                  0.0
-                </td>
-              </tr>
-              <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
-                <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
-                  Aceptable
-                </th>
-                <td class="px-6 py-4">
-                  0.4
-                </td>
-              </tr>
-              <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
-                <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
-                  Meritorio
-                </th>
-                <td class="px-6 py-4">
-                  0.6
-                </td>
-              </tr>
-
-            </tbody>
-          </table>
-        </div>
-        Escribir un programa que lea la puntuación del usuario e indique su nivel de rendimiento,
-        así como la cantidad de dinero que recibirá el usuario
-
-
-        </p>
-        <div class="grid gap-4 mb-4 sm:grid-cols-2">
-          <div>
-            <label for="name" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">renta anual</label>
-            <input type="number" name="name" id="puntuacion" min="0"
-              class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
-              placeholder="Numero">
           </div>
+          <p id="repeustasegundos">Repuesta: </p>
+
+          <button onclick="segundosAMinutosSegundos()" type="button"
+            class="my-3 text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">
+            Calcular
+          </button>
+          <div id=""></div>
+      </section>
+      <!-- Ejercicios 8 -->
+      <section class="max-w-screen-xl px-4 py-8 mx-auto">
+        <div class="border rounded-lg border-gray-300 dark:border-gray-600  mb-4 w-full auto-rows-max px-4 py-2">
+          <h2 class="text-xl font-bold">Ejercicios 8</h2>
+          <p class="my-2">
+            Escriba un programa que pida una cantidad de segundos y que escriba
+            cuántos minutos y segundos son.
+
+          </p>
+          <div class="grid gap-4 mb-4 sm:grid-cols-2">
+            <div>
+              <label for="name" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Segundos</label>
+              <input type="number" name="name" id="segundos2" min="0"
+                class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
+                placeholder="Numero">
+            </div>
 
 
-        </div>
-        <p id="repuestaPuntuacion">Repuesta: </p>
-
-        <button onclick="empresaPuntuacion()" type="button"
-          class="my-3 text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">
-          Verificar
-        </button>
-        <div id=""></div>
-    </section>
-
-    <!-- Ejercicios 7 -->
-    <section class="max-w-screen-xl px-4 py-8 mx-auto">
-      <div class="border rounded-lg border-gray-300 dark:border-gray-600  mb-4 w-full auto-rows-max px-4 py-2">
-        <h2 class="text-xl font-bold">Ejercicios 7</h2>
-        <p class="my-2">
-          Escribir un programa para una empresa que tiene salas de juegos para todas las edades y
-          quiere calcular de forma automática el precio que debe cobrar a sus clientes por entrar. El
-          programa debe preguntar al usuario la edad del cliente y mostrar el precio de la entrada. Si
-          el cliente es menor de 4 años puede entrar gratis, si tiene entre 4 y 18 años debe pagar 5€
-          y si es mayor de 18 años, 10€.
-
-
-        </p>
-        <div class="grid gap-4 mb-4 sm:grid-cols-2">
-          <div>
-            <label for="name" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Puntuacion</label>
-            <input type="number" name="name" id="edadCliente" min="0"
-              class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
-              placeholder="Numero">
           </div>
+          <p id="repeustasegundos2">Repuesta: </p>
+
+          <button onclick="segundosAHorasMinutosSegundos()" type="button"
+            class="my-3 text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">
+            Calcular
+          </button>
+          <div id=""></div>
+      </section>
+    </article>
+
+    <article>
+      <div class="mx-12 place-self-center lg:col-span-7">
+        <h1
+          class="max-w-2xl mb-4 text-4xl font-extrabold tracking-tight leading-none md:text-5xl xl:text-6xl dark:text-white">
+          Ejercicios 3
+        </h1>
+
+      </div>
+      <!-- Ejercicios 1 -->
+      <section class="max-w-screen-xl px-4 py-8 mx-auto">
+        <div class="border rounded-lg border-gray-300 dark:border-gray-600  mb-4 w-full auto-rows-max px-4 py-2">
+          <h2 class="text-xl font-bold">Ejercicios 1</h2>
+          <p class="my-2">
+            Escribir un programa que pida al usuario una palabra y la
+            muestre por pantalla 10 veces.
+
+          </p>
+          <div class="grid gap-4 mb-4 sm:grid-cols-2">
+            <div>
+              <label for="name" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Palabra</label>
+              <input onchange="imprimirPalabra()" type="text" name="name" id="palabra" min="0"
+                class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
+                placeholder="Palabra">
+            </div>
 
 
-        </div>
-        <p id="repuestacliente">Repuesta: </p>
-
-        <button onclick="Calcularentrada()" type="button"
-          class="my-3 text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">
-          Calcularentrada
-        </button>
-        <div id=""></div>
-    </section>
-
-    <!-- Ejercicios 8 -->
-    <section class="max-w-screen-xl px-4 py-8 mx-auto">
-      <div class="border rounded-lg border-gray-300 dark:border-gray-600  mb-4 w-full auto-rows-max px-4 py-2">
-        <h2 class="text-xl font-bold">Ejercicios </h2>
-        <p class="my-2">
-          La pizzería Bella Napoli ofrece pizzas vegetarianas y no vegetarianas a sus clientes. Los
-          ingredientes para cada tipo de pizza aparecen a continuación.
-        <p> Ingredientes vegetarianos: Pimiento y tofu.
-        </p>
-        <p>Ingredientes no vegetarianos: Peperoni, Jamón y Salmón.</p>
-        <p> Escribir un programa que pregunte al usuario si quiere una pizza vegetariana o no, y en
-          función de su respuesta le muestre un menú con los ingredientes disponibles para que elija.
-          Solo se puede eligir un ingrediente además de la mozzarella y el tomate que están en todas
-          la pizzas. Al final se debe mostrar por pantalla si la pizza elegida es vegetariana o no y
-          todos los ingredientes que lleva.</p>
-
-
-        </p>
-        <label for="countries" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Select an
-          option</label>
-        <select onchange="pizza()" id="spizza"
-          class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
-          <option selected>Elije la pizza</option>
-          <option value="1">Vejetariana</option>
-          <option value="2">Normal</option>
-
-        </select>
-        <p class="my-3" id="repuestacliente">
-        <div class="relative overflow-x-auto flex justify-center">
-          <table class="w-96 text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400" id="tabla">
-
-          </table>
-        </div>
-        </p>
-        <p id="repuestaingredientes">Repuesta: </p>
-
-        <button onclick="Calcularentrada()" type="button"
-          class="my-3 text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">
-          Impirmir
-        </button>
-        <div id=""></div>
-
-    </section>
-    <div class="mx-12 place-self-center lg:col-span-7">
-      <h1
-        class="max-w-2xl mb-4 text-4xl font-extrabold tracking-tight leading-none md:text-5xl xl:text-6xl dark:text-white">
-        Ejercicios 2
-      </h1>
-
-    </div>
-
-    <!-- Ejercicios 1 -->
-    <section class="max-w-screen-xl px-4 py-8 mx-auto">
-      <div class="border rounded-lg border-gray-300 dark:border-gray-600  mb-4 w-full auto-rows-max px-4 py-2">
-        <h2 class="text-xl font-bold">Ejercicios 1</h2>
-        <p class="my-2">
-          Escriba un programa que pida dos números y que escriba su media
-          aritmética.
-
-        </p>
-        <div class="grid gap-4 mb-4 sm:grid-cols-2">
-          <div>
-            <label for="name" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Primer numero</label>
-            <input type="number" name="name" id="numeroMEdia1" min="0"
-              class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
-              placeholder="Numero">
           </div>
-          <div>
-            <label for="name" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Segundo
-              numero</label>
-            <input type="number" name="name" id="numeroMEdia2" min="0"
-              class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
-              placeholder="Numero">
+          <p id="respuestaPalabra" class="">Repuesta: </p>
+
+          <!-- <button onclick="mediaAritmetica()" type="button"
+            class="my-3 text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">
+            Verificar
+          </button> -->
+      </section>
+      <!-- Ejercicios 2 -->
+      <section class="max-w-screen-xl px-4 py-8 mx-auto">
+        <div class="border rounded-lg border-gray-300 dark:border-gray-600  mb-4 w-full auto-rows-max px-4 py-2">
+          <h2 class="text-xl font-bold">Ejercicios 2</h2>
+          <p class="my-2">
+            Escribir un programa que pregunte al usuario su edad y
+            muestre por pantalla todos los años que ha cumplido (desde
+            1 hasta su edad).
+          </p>
+          <div class="grid gap-4 mb-4 sm:grid-cols-2">
+            <div>
+              <label for="name" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Edad</label>
+              <input onchange="imprimirEdad()" type="number" name="name" id="edadiprimi" min="0"
+                class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
+                placeholder="Edad">
+            </div>
           </div>
+          <p id="respuestaEdad" class="">Repuesta: </p>
+          <!-- <button onclick="mediaAritmetica()" type="button"
+                  class="my-3 text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">
+                  Verificar
+                </button> -->
+      </section>
+            <!-- Ejercicios 3 -->
+            <section class="max-w-screen-xl px-4 py-8 mx-auto">
+              <div class="border rounded-lg border-gray-300 dark:border-gray-600  mb-4 w-full auto-rows-max px-4 py-2">
+                <h2 class="text-xl font-bold">Ejercicios 3</h2>
+                <p class="my-2">
+                  Escribir un programa que pregunte al usuario su edad y
+                  muestre por pantalla todos los años que ha cumplido (desde
+                  1 hasta su edad).
+                </p>
+                <div class="grid gap-4 mb-4 sm:grid-cols-2">
+                  <div>
+                    <label for="name" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Edad</label>
+                    <input onchange="numerosimpares()" type="number" name="name" id="numero3" min="0"
+                      class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
+                      placeholder="Numero">
+                  </div>
+                </div>
+                <p id="imprimirparnu" class="">Repuesta: </p>
+                <!-- <button onclick="mediaAritmetica()" type="button"
+                        class="my-3 text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">
+                        Verificar
+                      </button> -->
+            </section>
 
-
-        </div>
-        <p id="respuestapar">Repuesta: </p>
-
-        <button onclick="mediaAritmetica()" type="button"
-          class="my-3 text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">
-          Verificar
-        </button>
-        <div id=""></div>
-    </section>
-    <!-- Ejercicios 2 -->
-    <section class="max-w-screen-xl px-4 py-8 mx-auto">
-      <div class="border rounded-lg border-gray-300 dark:border-gray-600  mb-4 w-full auto-rows-max px-4 py-2">
-        <h2 class="text-xl font-bold">Ejercicios 2</h2>
-        <p class="my-2">
-          Escriba un programa que pida el peso (en kilogramos) y la altura (en
-          metros) de una persona y que calcule su índice de masa corporal (imc).
-
-        </p>
-        <div class="grid gap-4 mb-4 sm:grid-cols-2">
-          <div>
-            <label for="name" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Ingrese su masa en
-              kg</label>
-            <input type="number" name="name" id="masa" min="0"
-              class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
-              placeholder="Numero">
-          </div>
-          <div>
-            <label for="name" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Su altura en
-              metros</label>
-            <input type="number" name="name" id="altura" min="0"
-              class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
-              placeholder="Numero">
-          </div>
-
-
-        </div>
-        <p id="repuestamasa">Repuesta: </p>
-
-        <button onclick="masaMuscular()" type="button"
-          class="my-3 text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">
-          Verificar
-        </button>
-        <div id=""></div>
-    </section>
-
-    <!-- Ejercicios 3 -->
-    <section class="max-w-screen-xl px-4 py-8 mx-auto">
-      <div class="border rounded-lg border-gray-300 dark:border-gray-600  mb-4 w-full auto-rows-max px-4 py-2">
-        <h2 class="text-xl font-bold">Ejercicios 3</h2>
-        <p class="my-2">
-          Escriba un programa que pida una distancia en pies y pulgadas y que
-          escriba esa distancia en centímetros.
-
-        </p>
-        <div class="grid gap-4 mb-4 sm:grid-cols-2">
-          <div>
-            <label for="name" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Pies</label>
-            <input type="number" name="name" id="pies" min="0"
-              class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
-              placeholder="Numero">
-          </div>
-          <div>
-            <label for="name" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Pulgadas</label>
-            <input type="number" name="name" id="pulgadas" min="0"
-              class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
-              placeholder="Numero">
-          </div>
-
-
-        </div>
-        <p id="repuestaPiesPulgadas">Repuesta: </p>
-
-        <button onclick="pulgadas()" type="button"
-          class="my-3 text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">
-          Calcular
-        </button>
-        <div id=""></div>
-    </section>
-    <!-- Ejercicios 4 -->
-    <section class="max-w-screen-xl px-4 py-8 mx-auto">
-      <div class="border rounded-lg border-gray-300 dark:border-gray-600  mb-4 w-full auto-rows-max px-4 py-2">
-        <h2 class="text-xl font-bold">Ejercicios 4</h2>
-        <p class="my-2">
-          Escriba un programa que pida una distancia en pulgadas y que escriba
-          esa distancia en centímetros
-
-        </p>
-        <div class="grid gap-4 mb-4 sm:grid-cols-2">
-          <div>
-            <label for="name" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Pulgadas</label>
-            <input type="number" name="name" id="pulgadas1" min="0"
-              class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
-              placeholder="Numero">
-          </div>
-
-
-        </div>
-        <p id="respuestaPulgadas">Repuesta: </p>
-
-        <button onclick="pulgadascentimetros()" type="button"
-          class="my-3 text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">
-          Calcular
-        </button>
-        <div id=""></div>
-    </section>
-
-    <!-- Ejercicios 5 -->
-    <section class="max-w-screen-xl px-4 py-8 mx-auto">
-      <div class="border rounded-lg border-gray-300 dark:border-gray-600  mb-4 w-full auto-rows-max px-4 py-2">
-        <h2 class="text-xl font-bold">Ejercicios 5</h2>
-        <p class="my-2">
-          Escriba un programa que pida una distancia en pulgadas y que escriba
-          esa distancia en centímetros
-
-        </p>
-        <div class="grid gap-4 mb-4 sm:grid-cols-2">
-          <div>
-            <label for="name" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Pies</label>
-            <input type="number" name="name" id="pies1" min="0"
-              class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
-              placeholder="Numero">
-          </div>
-
-
-        </div>
-        <p id="respuestaPies">Repuesta: </p>
-
-        <button onclick="piesCEntimetros()" type="button"
-          class="my-3 text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">
-          Calcular
-        </button>
-        <div id=""></div>
-    </section>
-    <!-- Ejercicios 6 -->
-    <section class="max-w-screen-xl px-4 py-8 mx-auto">
-      <div class="border rounded-lg border-gray-300 dark:border-gray-600  mb-4 w-full auto-rows-max px-4 py-2">
-        <h2 class="text-xl font-bold">Ejercicios 6</h2>
-        <p class="my-2">
-          Escriba un programa que pida una temperatura en grados Fahrenheit y
-          que escriba esa temperatura en grados Celsius.
-
-        </p>
-        <div class="grid gap-4 mb-4 sm:grid-cols-2">
-          <div>
-            <label for="name" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">fahrenheit</label>
-            <input type="number" name="name" id="fahrenheit" min="0"
-              class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
-              placeholder="Numero">
-          </div>
-
-
-        </div>
-        <p id="repuestafahrenheitACelsius">Repuesta: </p>
-
-        <button onclick="fahrenheitACelsius()" type="button"
-          class="my-3 text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">
-          Calcular
-        </button>
-        <div id=""></div>
-    </section>
-    <!-- Ejercicios 7 -->
-    <section class="max-w-screen-xl px-4 py-8 mx-auto">
-      <div class="border rounded-lg border-gray-300 dark:border-gray-600  mb-4 w-full auto-rows-max px-4 py-2">
-        <h2 class="text-xl font-bold">Ejercicios 7</h2>
-        <p class="my-2">
-          Escriba un programa que pida una cantidad de segundos y que escriba
-          cuántos minutos y segundos son.
-
-        </p>
-        <div class="grid gap-4 mb-4 sm:grid-cols-2">
-          <div>
-            <label for="name" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Segundos</label>
-            <input type="number" name="name" id="segundos" min="0"
-              class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
-              placeholder="Numero">
-          </div>
-
-
-        </div>
-        <p id="repeustasegundos">Repuesta: </p>
-
-        <button onclick="segundosAMinutosSegundos()" type="button"
-          class="my-3 text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">
-          Calcular
-        </button>
-        <div id=""></div>
-    </section>
-    <!-- Ejercicios 8 -->
-    <section class="max-w-screen-xl px-4 py-8 mx-auto">
-      <div class="border rounded-lg border-gray-300 dark:border-gray-600  mb-4 w-full auto-rows-max px-4 py-2">
-        <h2 class="text-xl font-bold">Ejercicios 8</h2>
-        <p class="my-2">
-          Escriba un programa que pida una cantidad de segundos y que escriba
-          cuántos minutos y segundos son.
-
-        </p>
-        <div class="grid gap-4 mb-4 sm:grid-cols-2">
-          <div>
-            <label for="name" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Segundos</label>
-            <input type="number" name="name" id="segundos2" min="0"
-              class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
-              placeholder="Numero">
-          </div>
-
-
-        </div>
-        <p id="repeustasegundos2">Repuesta: </p>
-
-        <button onclick="segundosAHorasMinutosSegundos()" type="button"
-          class="my-3 text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">
-          Calcular
-        </button>
-        <div id=""></div>
-    </section>
+    </article>
   </main>
 
   <script src="main.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.1/flowbite.min.js"></script>
 </body>
-b
+
 
 </html>
